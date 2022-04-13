@@ -17,13 +17,13 @@ public class Model {
 	private double costoMinimo;
 	
 	public Model() {
-		
+	// prova commit
 	this.meteoDAO = new MeteoDAO();
 	this.allCitta = new ArrayList<Citta>(meteoDAO.getAllCitta());
 	this.bestSequenza = new ArrayList<Citta>();
 	this.costoMinimo = 100000;
 	}
-	
+	//
 	public List<Rilevamento> getAllRilevamentiLocalitaMese(int mese, String localita) {
 		return meteoDAO.getAllRilevamenti();
 	}
